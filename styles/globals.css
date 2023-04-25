@@ -1,17 +1,86 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
- 
 
-
-@layer base{
-
+@layer base {
 }
-@layer components{
-   .bg{
-    background: radial-gradient(90.16% 143.01% at 15.32% 21.04%, #47CFA4 0%, #47BFC8 77.08%, #47B0DF 100%);
-   }
-}
-@layer utilities{
+@layer components {
+  .bg {
+    background: radial-gradient(
+      90.16% 143.01% at 15.32% 21.04%,
+      #47cfa4 0%,
+      #47bfc8 77.08%,
+      #47b0df 100%
+    );
+  }
+  .hero-bg {
+    background-image: linear-gradient(98.79deg, #5cdb94 38.42%, #2e35ff46),
+      url("/hero-bg.png");
+  }
+  .form-bg {
+    background: #ffffff9e;
+  }
+  .statistics-bg {
+    background: radial-gradient(
+      100% 213.55% at 0% 50.31%,
+      rgba(75, 163, 166, 0.2) 0%,
+      rgba(75, 163, 166, 0.2) 100%
+    );
+  }
+  .testimonials-bg {
+    background: radial-gradient(
+      90.16% 143.01% at 15.32% 21.04%,
+      rgba(56, 149, 131, 0.5) 0%,
+      rgba(92, 219, 148, 0.5) 77.08%,
+      rgba(141, 228, 175, 0.5) 100%
+    );
+  }
 
+  .banner::after {
+    background-color: white;
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 95px;
+    height: 5px;
+    top: 0;
+  }
+  .form-bg .react-tel-input .flag-dropdown {
+    border: 1px solid transparent;
+    background: transparent;
+  }
+  .form-bg .react-tel-input .selected-flag:hover {
+    background: transparent;
+    border: 1px solid transparent;
+  }
+  .prev-btn {
+    width: 50px;
+    height: 50px;
+    left: -22px;
+    top: 0;
+    bottom: 0;
+  }
+  .prev-btn_page {
+    width: 50px;
+    height: 50px;
+    left: 45px;
+    top: -62px;
+    bottom: 0;
+  }
+  .next-btn_page {
+    width: 50px;
+    height: 50px;
+    right: 45px;
+    top: -62px;
+    bottom: 0;
+  }
+  .next-btn {
+    width: 50px;
+    height: 50px;
+    right: -22px;
+    top: 0;
+    bottom: 0;
+  }
+}
+@layer utilities {
 }

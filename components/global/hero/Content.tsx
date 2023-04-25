@@ -1,6 +1,5 @@
 import { Prop } from ".";
-import { Button } from "@material-tailwind/react";
-const Content = ({ heading, description, listing, url }: Prop) => {
+const Content = ({ heading, description, listing}: Prop) => {
   return (
     <div className="lg:w-1/2 pr-2 mx-auto mt-8">
       <h1 className={`lg:text-4xl text-2xl text-heading md:text-3xl sm:text-3xl pt-4  font-bold lg:py-4 md:py-2 letter-tight leading-10 text-left relative banner   text-color-secondary `}>
@@ -14,7 +13,7 @@ const Content = ({ heading, description, listing, url }: Prop) => {
           return (
             <li className="flex items-center space-x-3" key={i.toString()}>
               <svg
-                className="flex-shrink-0 w-5 h-5 text-white bg-color-primary rounded-full p-1"
+                className="flex-shrink-0 w-5 h-5 text-white bg-color-third rounded-full p-1"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -32,9 +31,7 @@ const Content = ({ heading, description, listing, url }: Prop) => {
           );
         })}
       </ul>
-      <Button className="bg-color-primary text-white px-6 py-2 rounded-md text-xs font-semibold tracking-wide hidden lg:block">
-        Get Started
-      </Button>
+       
     </div>
   );
 };
