@@ -11,6 +11,23 @@
    .bg{
     background: radial-gradient(90.16% 143.01% at 15.32% 21.04%, #47CFA4 0%, #47BFC8 77.08%, #47B0DF 100%);
    }
+   .bg2{
+      background: radial-gradient(90.16% 143.01% at 15.32% 21.04%, rgba(56, 149, 131, 0.5) 0%, rgba(92, 219, 148, 0.5) 77.08%, rgba(141, 228, 175, 0.5) 100%) ;
+   }
+   .text-hover {
+      transition: transform;
+      transition-delay: 0.2s;
+      transition-duration: 0.7s;
+   }
+   .text-hover:hover {
+      transform: translateY(-50px);
+   }
+   .read_more {
+      display: none;
+   }
+   .text-hover:hover .read_more {
+      display: inline;
+   }
 }
 @layer utilities{
 
