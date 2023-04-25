@@ -4,7 +4,7 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx}",
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
-
+ 
     // Or if using `src` directory:
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
@@ -21,16 +21,12 @@ module.exports = {
     },
     extend: {
       colors: {
-        "color-primary": "#2E35FF",
+        "color-primary": "#5CDB94",
         "color-secondary": "#fff",
-        "color-third": "#60E1CB",
-        "color-fourth": "#000000",
-        "color-fifth": "#3B3B3B",
-        "color-sixth": "#60E1CB"
+        "color-third": "#389583",
+        "color-fourth": "#05396B",
+        "color-fifth": "rgba(0, 0, 0, 0.7)"
       },
-      backgroundImage: {
-        'hero-img': "url('/hero-bg.png')", 
-      }
     },
   },
   plugins: [],
