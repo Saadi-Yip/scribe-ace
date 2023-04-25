@@ -1,7 +1,7 @@
 import Link from "next/link";
 const Footer = () => {
     return (
-      <footer className="w-full bg-color-[#5CDB94]">
+      <footer className="w-full bg-color-primary">
       <div className=" flex lg:m-auto m-auto flex-col lg:flex-row ml-5 mr-8 footer_sec">
         <div className="  sm:justify-center">
           <h2 className="text-color-secondary font-bold text-lg">Logo</h2>
@@ -62,7 +62,7 @@ const Footer = () => {
           </select>
         </div>
       </div>
-      <div className="max-w-[1252px] mx-auto py-4">
+      <div className="border-t-2 max-w-[1252px] mx-auto py-4">
         <div className=" flex lg:justify-end justify-center sm:flex sm:justify-center sm:text-center  md:justify-center ">
           <span className="text-color-secondary mx-4 text-md font-bold">
             FB
