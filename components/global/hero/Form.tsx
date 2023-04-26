@@ -56,17 +56,17 @@ const Form = () => {
       >
         {/* Header Start */}
         <div className="icons lg:px-2 md:px-0 flex py-6">
-          <div className="text-right w-1/2 pl-4 pt-4 lg:pl-4 md:pl-6 sm:pl-12  flex justify-center">
+          <div className="text-right w-1/2 pt-4 pl-4 sm:pl-8 lg:pl-6 flex justify-start">
             <Svg />
           </div>
-          <div className="lg:text-right w-1/2 mr-2 text-left text-color-third font-semibold md:pr-0 md:pl-0 lg:pr-2 xl:pr-4">
-            <h3 className="lg:text-3xl md:text-xl sm:text-sm text-lg tracking-wide  leading-10">
+          <div className="lg:text-right w-1/2 mr-2 text-left text-color-third font-bold md:pr-0 md:pl-0 lg:pr-2 xl:pr-4">
+            <h3 className="lg:text-3xl md:text-2xl sm:text-xl text-xl tracking-wide  leading-10">
               Chat
             </h3>
-            <h6 className="lg:text-lg text-xs md:text-xs md:tracking-tight md:leading-2 sm:leading-6">
+            <h6 className="lg:text-lg sm:text-lg text-md md:text-lg md:tracking-tight md:leading-2 sm:leading-6">
               with us to Avail
             </h6>
-            <h3 className="lg:text-2xl md:text-xs sm:text-sm tracking-tight leading-10">
+            <h3 className="lg:text-2xl md:text-lg sm:text-lg tracking-tight leading-10">
               50% OFF
             </h3>
           </div>
