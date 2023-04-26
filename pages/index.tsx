@@ -1,7 +1,5 @@
  
-import Hero from "@/components/global/hero";
-import Header from "@/components/global/header";
-import Testimonials from "@/components/global/testimonials";
+import Hero from "@/components/global/hero";  
 
  
 
@@ -19,10 +17,8 @@ export default function Home() {
 
 
   return (
-    <main> 
-      <Header />
+    <main>  
       <Hero heading={heading} description={description} listing={listing}/>
-      <Testimonials/>
     </main>
   )
 }
