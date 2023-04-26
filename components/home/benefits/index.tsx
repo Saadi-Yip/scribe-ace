@@ -1,6 +1,6 @@
 const Benifits=()=>{
     return(
-        <section className="text-gray-600 body-font bg-color-primary">
+        <section className="text-gray-600 body-font testimonials-bg">
         <div className="container px-5 md:py-24 py-14 mx-auto">
           <h1 className="sm:text-4xl text-2xl font-bold title-font text-center text-color-secondary mb-20">Benefits Of Our Content
           </h1>
