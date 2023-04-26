@@ -183,12 +183,33 @@
     top: 0;
     bottom: 0;
   }
+  .pricing_sec {
+   border: 2px solid rgba(0, 240, 255, 1);
+}
+.pricing_sec ul{
+   border-bottom: 1px solid #fff;
+}
+.price_Col{
+   border: 7px solid #fff;
+   margin-top: -30px;
+}
+.pricing_sec ul li:nth-child(odd){
+   background-color: #fff;
+}
+.package-heading{
+   background: radial-gradient(90.16% 143.01% at 15.32% 21.04%, rgb(165 239 255 / 68%) 0%, rgb(110 191 244 / 14%) 77.08%, rgb(70 144 213 / 20%) 100%);
+   background-blend-mode: overlay, normal;
+   border-radius: 28px;
+}
   }
 
  
 
 
+ 
+
 @layer base{
+
 }
 
 @layer utilities{

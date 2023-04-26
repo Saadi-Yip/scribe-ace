@@ -35,6 +35,9 @@ const blogs_data = [
     url: '/portfolio-2.png'
   },
 ];
+import Pricing from "@/components/global/pricing";
+
+ 
 
 export default function Home() {
   // Hero Component Props
@@ -57,6 +60,7 @@ export default function Home() {
       <Steps />
       <Benifits/>
       <Blogs data={blogs_data} />
+      <Pricing />
       <Testimonials />
     </main>
   );
