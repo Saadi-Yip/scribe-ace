@@ -30,6 +30,51 @@ const Portfolio = () => {
       >
 
     <SwiperSlide>
+    <div className="flex flex-wrap md:justify-center  justify-center">
+    <div className="w-60 h-96">
+        <div className="flex w-full md:py-5 ">
+          <img alt="gallery" className="  object-cover " src="poster.png"/>
+        </div>
+      </div>
+      <div className="w-60 h-96">
+        <div className="flex w-full md:py-5 ">
+          <img alt="gallery" className="  object-cover object-center" src="poster (1).png"/>
+        </div>
+      </div>
+      <div className="w-60 h-96">
+        <div className="flex w-full   md:py-5 ">
+          <img alt="gallery" className="  object-cover object-center" src="poster (2).png"/>
+        </div>
+      </div>
+      <div className="w-60 h-96">
+        <div className="flex w-full   md:py-5 ">
+          <img alt="gallery" className="  object-cover object-center" src="poster (3).png"/>
+        </div>
+      </div>
+      <div className="w-60 h-96">
+        <div className="flex w-full   md:py-5 ">
+          <img alt="gallery" className="  object-cover object-center" src="poster (4).png"/>
+        </div>
+      </div>
+      <div className="w-60 h-96">
+        <div className="flex w-full   md:py-5 ">
+          <img alt="gallery" className="  object-cover object-center" src="poster (5).png"/>
+        </div>
+      </div>
+      <div className="w-60 h-96">
+        <div className="flex w-full   py-5 ">
+          <img alt="gallery" className="  object-cover object-center" src="poster (6).png"/>
+        </div>
+      </div>
+      <div className="w-60 h-96">
+        <div className="flex w-full   md:py-5 ">
+          <img alt="gallery" className="  object-cover object-center" src="poster (4).png"/>
+        </div>
+      </div>
+     
+    </div>
+    </SwiperSlide>
+    <SwiperSlide>
     <div className="flex flex-wrap  md:justify-center justify-center">
     <div className="w-60 h-96 ">
         <div className="flex w-full md:py-5 ">
@@ -64,6 +109,11 @@ const Portfolio = () => {
       <div className="w-60 h-96">
         <div className="flex w-full   py-5 ">
           <img alt="gallery" className="  object-cover object-center" src="poster (6).png"/>
+        </div>
+      </div>
+      <div className="w-60 h-96">
+        <div className="flex w-full   md:py-5 ">
+          <img alt="gallery" className="  object-cover object-center" src="poster (4).png"/>
         </div>
       </div>
     </div>
@@ -105,43 +155,9 @@ const Portfolio = () => {
           <img alt="gallery" className="  object-cover object-center" src="poster (6).png"/>
         </div>
       </div>
-    </div>
-    </SwiperSlide>
-    <SwiperSlide>
-    <div className="flex flex-wrap  md:justify-center justify-center">
-    <div className="w-60 h-96 ">
-        <div className="flex w-full md:py-5 ">
-          <img alt="gallery" className="  object-cover " src="poster.png"/>
-        </div>
-      </div>
-      <div className="w-60 h-96">
-        <div className="flex w-full md:py-5 ">
-          <img alt="gallery" className="  object-cover object-center" src="poster (1).png"/>
-        </div>
-      </div>
-      <div className="w-60 h-96 ">
-        <div className="flex w-full   md:py-5 ">
-          <img alt="gallery" className="  object-cover object-center" src="poster (2).png"/>
-        </div>
-      </div>
-      <div className="w-60 h-96">
-        <div className="flex w-full   md:py-5 ">
-          <img alt="gallery" className="  object-cover object-center" src="poster (3).png"/>
-        </div>
-      </div>
       <div className="w-60 h-96">
         <div className="flex w-full   md:py-5 ">
           <img alt="gallery" className="  object-cover object-center" src="poster (4).png"/>
-        </div>
-      </div>
-      <div className="w-60 h-96">
-        <div className="flex w-full   md:py-5 ">
-          <img alt="gallery" className="  object-cover object-center" src="poster (5).png"/>
-        </div>
-      </div>
-      <div className="w-60 h-96">
-        <div className="flex w-full   py-5 ">
-          <img alt="gallery" className="  object-cover object-center" src="poster (6).png"/>
         </div>
       </div>
     </div>
