@@ -1,6 +1,8 @@
  
 import Hero from "@/components/global/hero";  
 import Testimonials from "@/components/global/testimonials";
+import Cta from "@/components/global/cta";
+import Header from "@/components/global/header";
 
  
 
@@ -19,8 +21,11 @@ export default function Home() {
 
   return (
     <main>  
+      <Header />
       <Hero heading={heading} description={description} listing={listing}/>
       <Testimonials/>
+       <Cta/>
+       
     </main>
   )
 }
