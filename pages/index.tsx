@@ -3,6 +3,7 @@ import Hero from "@/components/global/hero";
 import Testimonials from "@/components/global/testimonials";
 import Cta from "@/components/global/cta";
 import Header from "@/components/global/header";
+import Services from "@/components/home/services";
 
  
 
@@ -23,9 +24,9 @@ export default function Home() {
     <main>  
       <Header />
       <Hero heading={heading} description={description} listing={listing}/>
+      <Services/>
+      <Cta/>
       <Testimonials/>
-       <Cta/>
-       
     </main>
   )
 }
