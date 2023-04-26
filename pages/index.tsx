@@ -1,5 +1,6 @@
  
 import Hero from "@/components/global/hero";  
+import Testimonials from "@/components/global/testimonials";
 
  
 
@@ -19,6 +20,7 @@ export default function Home() {
   return (
     <main>  
       <Hero heading={heading} description={description} listing={listing}/>
+      <Testimonials/>
     </main>
   )
 }
