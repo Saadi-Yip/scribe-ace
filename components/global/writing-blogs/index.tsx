@@ -4,15 +4,15 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
 import "swiper/css";
 import "swiper/css/navigation";
-import { useRef } from "react"; 
+import { useRef } from "react";
+
 //-- Import Swiper styles
 
 import "swiper/css";
 import "swiper/css/navigation";
-import useDimensions from "@/hooks/use-dimensions"; 
+import useDimensions from "@/hooks/use-dimensions";
 
 const Blogs = () => {
- 
   return (
     <section className="container xl:max-w-[70%] lg:max-w-[90%] max-w-[80%] mx-auto mt-2 py-10 relative">
       <h5 className="md:text-3xl text-color-third text-2xl font-bold mb-2 text-center">
@@ -25,14 +25,13 @@ const Blogs = () => {
 
 export default Blogs;
 
-const Slides = (props: any) => { 
+const Slides = (props: any) => {
   const { width } = useDimensions();
   const swiperRef = useRef<any>(null);
   return (
     <>
-    <Swiper
+      <Swiper
         slidesPerView={width < 640 ? 1 : 3 && width < 1023 ? 2 : 3}
-        
         spaceBetween={30}
         loop={true}
         modules={[Navigation]}
@@ -46,7 +45,8 @@ const Slides = (props: any) => {
             <div className="flex flex-wrap justify-center bg-transparent pb-4">
               <div className="shadow-xl swiper-head testimonials-bg rounded-3xl mt-12 ">
                 <div className="header">
-                  <Image alt = ""
+                  <Image
+                    alt=""
                     src="/portfolio-1.png"
                     className="p-0 w-full rounded-2xl"
                     width={473}
@@ -72,7 +72,8 @@ const Slides = (props: any) => {
             <div className="flex flex-wrap justify-center bg-transparent pb-4">
               <div className="shadow-xl swiper-head testimonials-bg rounded-3xl mt-12  ">
                 <div className="header">
-                  <Image alt = ""
+                  <Image
+                    alt=""
                     src="/portfolio-2.png"
                     className="p-0 w-full rounded-2xl"
                     width={473}
@@ -98,7 +99,8 @@ const Slides = (props: any) => {
             <div className="flex flex-wrap justify-center bg-transparent pb-4">
               <div className="shadow-xl swiper-head testimonials-bg rounded-3xl mt-12  ">
                 <div className="header">
-                  <Image alt = ""
+                  <Image
+                    alt=""
                     src="/portfolio-3.png"
                     className="p-0 w-full rounded-2xl"
                     width={473}
@@ -127,7 +129,7 @@ const Slides = (props: any) => {
                   <Image
                     src="/portfolio-1.png"
                     className="p-0 w-full rounded-2xl"
-                    alt = ""
+                    alt=""
                     width={473}
                     height={414}
                   />
@@ -151,7 +153,8 @@ const Slides = (props: any) => {
             <div className="flex flex-wrap justify-center bg-transparent pb-4">
               <div className="shadow-xl swiper-head testimonials-bg rounded-3xl mt-12">
                 <div className="header">
-                  <Image alt = ""
+                  <Image
+                    alt=""
                     src="/portfolio-2.png"
                     className="p-0 w-full rounded-2xl"
                     width={473}
@@ -178,13 +181,23 @@ const Slides = (props: any) => {
           className="prev-btn absolute z-10 m-auto shadow-lg"
           onClick={() => swiperRef.current?.slidePrev()}
         >
-          <Image src='/chevronprev.png' alt="solidery" width={100} height={100}/>
+          <Image
+            src="/chevronprev.png"
+            alt="solidery"
+            width={100}
+            height={100}
+          />
         </button>
         <button
           className="next-btn absolute z-10 m-auto"
           onClick={() => swiperRef.current?.slideNext()}
         >
-          <Image src='/chevronnext.png' alt="solidery" width={100} height={100}/>
+          <Image
+            src="/chevronnext.png"
+            alt="solidery"
+            width={100}
+            height={100}
+          />
         </button>
       </div>
     </>
