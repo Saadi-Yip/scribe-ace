@@ -4,6 +4,9 @@ import Testimonials from "@/components/global/testimonials";
 import Cta from "@/components/global/cta";
 import Header from "@/components/global/header";
 import Services from "@/components/home/services";
+import Benifits from "@/components/home/benefits";
+
+ 
 
 export default function Home() {
   // Hero Component Props
@@ -24,6 +27,7 @@ export default function Home() {
       <Services />
       <Cta />
       <Steps />
+      <Benifits/>
       <Testimonials />
     </main>
   );
