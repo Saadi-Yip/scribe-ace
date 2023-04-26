@@ -17,16 +17,31 @@
    .text-hover {
       transition: transform;
       transition-delay: 0.2s;
-      transition-duration: 0.7s;
+      transition-duration: 0.6s;
    }
-   .text-hover:hover {
-      transform: translateY(-50px);
-   }
+    
    .read_more {
       display: none;
    }
    .text-hover:hover .read_more {
       display: inline;
+   }
+   .hover-class {
+      cursor: pointer;
+      
+   }
+   .read_more_link {
+      opacity: 0;
+      transition: opacity;
+      transition-delay: 0.3s;
+      transition-duration: 0.8s;
+   }
+   .hover-class:hover .read_more_link {
+     opacity: 1;
+
+   }
+   .hover-class:hover .text-hover {
+      transform: translateY(-50px);
    }
 }
 @layer utilities{
