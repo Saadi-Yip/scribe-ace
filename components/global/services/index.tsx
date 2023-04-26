@@ -1,10 +1,28 @@
 import Content from "./Content";
 import Picture from "./Picture";
 
-const Services = () => {
+export type Prop = {
+  data:{
+    heading: string,
+    authors: string,
+    protect: string,
+    handpick: string,
+    riding: string,
+    understand: string,
+    variety: string,
+    stream: string,
+    url: string
+  }
+}
+const Services = (props: Prop) => {
+ 
   return (
     <section>
-      <Content />
+
+      <div className="flex justify-between">
+          <Content data = {props.data}/>
+        </div>
+
     </section>
   );
 };
