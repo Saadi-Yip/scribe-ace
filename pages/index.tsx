@@ -1,11 +1,14 @@
-import Steps from "@/components/global/steps";
+
+import Header from "@/components/global/header";
 import Hero from "@/components/global/hero";
+import Steps from "@/components/global/steps";
 import Testimonials from "@/components/global/testimonials";
 import Cta from "@/components/global/cta";
-import Header from "@/components/global/header";
 import Services from "@/components/home/services";
 import Benifits from "@/components/home/benefits";
 import Blogs from "@/components/global/writing-blogs";
+import Pricing from "@/components/global/pricing"; 
+import Footer from "@/components/global/footer"; 
 
 //&& Blogs Props &&//
 const blogs_data = [
@@ -35,7 +38,8 @@ const blogs_data = [
     url: '/portfolio-2.png'
   },
 ];
-import Pricing from "@/components/global/pricing";
+  
+ 
 
  
 
@@ -53,7 +57,7 @@ export default function Home() {
 
   return (
     <main>
-      <Header />
+      <Header /> 
       <Hero heading={heading} description={description} listing={listing} />
       <Services />
       <Cta />
@@ -61,7 +65,8 @@ export default function Home() {
       <Benifits/>
       <Blogs data={blogs_data} />
       <Pricing />
-      <Testimonials />
+      <Testimonials /> 
+      <Footer/> 
     </main>
   );
 }
