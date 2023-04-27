@@ -83,7 +83,9 @@
   .steps_sec .steps_row:nth-child(even) .number_row h6 {
     transform: translateX(-27px);
   }
-
+  .navigation a{
+    font-size: 1vw;
+  }
   @media screen and (max-width: 1245px) {
     .step_box {
       max-width: 41vw;
