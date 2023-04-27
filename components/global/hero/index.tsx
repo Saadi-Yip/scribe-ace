@@ -8,24 +8,25 @@ export type Prop = {
   listing: string[]; 
   url?: string;
 };
-const stats = [
-  { title: "Satisfied Clients", count: 1874 },
-  { title: "Years of Experience", count: 7 },
-  { title: "Projects", count: 1874 },
-  { title: "Increased ROI", count: 187 },
-];
-const Hero = ({ heading, description, listing, url }: Prop) => {
+export type Stat = {
+  stats:{ 
+    count: number;
+    title: string;
+  }[]
+}
+ 
+const Hero = (props: Prop, data: Stat) => {
   return (
     <section className="relative hero-bg bg-center bg-cover">
         <div className="flex flex-wrap">
           <div className="container w-4/5 mx-auto">
             <div className="flex flex-wrap items-center">
-              <Content heading = {heading} description= {description} listing={listing}/>
+              <Content heading = {props.heading} description= {props.description} listing={props.listing}/>
               <Form />
             </div>
           </div>
         </div>
-        <Statistics stats={stats} />
+        <Statistics stats={data.stats} />
     </section>
   );
 };
