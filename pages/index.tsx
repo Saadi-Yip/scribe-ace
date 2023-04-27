@@ -7,6 +7,7 @@ import Cta from "@/components/global/cta";
 import Services from "@/components/home/services";
 import Benifits from "@/components/home/benefits";
 import Blogs from "@/components/global/writing-blogs";
+import Portfolio from "@/components/global/portfolio";
 import Pricing from "@/components/global/pricing"; 
 import Footer from "@/components/global/footer"; 
 
@@ -64,6 +65,7 @@ export default function Home() {
       <Steps />
       <Benifits/>
       <Blogs data={blogs_data} />
+      <Portfolio/>
       <Pricing />
       <Testimonials /> 
       <Footer/> 

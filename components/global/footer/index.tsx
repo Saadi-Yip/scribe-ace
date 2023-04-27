@@ -1,7 +1,7 @@
 import Link from "next/link";
 const Footer = () => {
   return (
-    <footer className="w-full bg-cover bg">
+    <footer className="w-full bg-cover testimonials-bg">
       <div className=" flex lg:m-auto m-auto flex-col lg:flex-row ml-5 mr-8 footer_sec">
         <div className="  sm:justify-center">
           <h2 className="text-color-secondary font-semibold text-xl">Logo</h2>
