@@ -4,7 +4,7 @@ type Prop = {
 };
 const Cta = (props:Prop) => { 
     return(
-      <section className="body-font testimonials-bg2 w-full ">
+      <section className="body-font testimonials-bg2 w-full px-6">
       <div className=" mx-auto">
         <div className="flex flex-col text-center  mb-14 ">
           <p className="xl:text-4xl lg:text-2xl  md:text-xl lg:font-medium text-xl font-medium title-font md:mb-4 mb-7 text-color-secondary mt-20 px-4 leading-8">{props.title}

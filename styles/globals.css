@@ -84,7 +84,7 @@
   .steps_sec .steps_row:nth-child(even) .number_row h6 {
     transform: translateX(-27px);
   }
-  .navigation a{
+  .navigation a {
     font-size: 1vw;
   }
   .work_col {
@@ -108,17 +108,15 @@
     }
   }
   .social-icon:hover {
-   @apply bg-color-third
+    @apply bg-color-third;
   }
-  .social-icon:hover img{
-   filter: brightness(6);
-   transform: translate;
-   transition: all 0.2s ease ;
+  .social-icon:hover img {
+    filter: brightness(6);
+    transform: translate;
+    transition: all 0.2s ease;
   }
-
 }
-@layer utilities{
-
+@layer utilities {
   .hero-bg {
     background-image: linear-gradient(98.79deg, #5cdb94 38.42%, #2e35ff46),
       url("/hero-bg.png");
@@ -134,10 +132,20 @@
     );
   }
   .testimonials-bg {
-    background: radial-gradient( 90.16% 143.01% at 15.32% 21.04%, rgb(56 149 131 / 87%) 0%, rgb(92 219 148) 77.08%, rgb(141 228 175) 100% );
+    background: radial-gradient(
+      90.16% 143.01% at 15.32% 21.04%,
+      rgb(56 149 131 / 87%) 0%,
+      rgb(92 219 148) 77.08%,
+      rgb(141 228 175) 100%
+    );
   }
-  .testimonials-bg2{
-    background: radial-gradient( 90.16% 143.01% at 15.32% 21.04%, rgb(56 149 131 / 87%) 0%, rgb(92 219 148) 77.08%, rgb(141 228 175) 100% );
+  .testimonials-bg2 {
+    background: radial-gradient(
+      90.16% 143.01% at 15.32% 21.04%,
+      rgb(56 149 131 / 87%) 0%,
+      rgb(92 219 148) 77.08%,
+      rgb(141 228 175) 100%
+    );
   }
 
   .text-hover {
@@ -188,37 +196,34 @@
     border: 1px solid transparent;
   }
   .prev-btn {
-   
     left: -21px;
     top: 0;
     bottom: 0;
     background: transparent;
-
   }
   .prev-btn img,
-  .next-btn img{
+  .next-btn img {
     box-shadow: 0px 5px 10px #80808087;
     border-radius: 50%;
     max-width: 52px;
   }
 
   .next-btn {
-   
-    right: -41px;
+    right: -21px;
     top: 0;
     bottom: 0;
   }
-  .prev-btn-testimonial { 
+  .prev-btn-testimonial {
     width: 100px;
     height: 100px;
     left: -47px;
     top: 0;
-    bottom: 0; 
+    bottom: 0;
   }
-  .next-btn-testimonial { 
+  .next-btn-testimonial {
     width: 100px;
-    height: 100px; 
-    right:-45px; 
+    height: 100px;
+    right: -45px;
     top: 0;
     bottom: 0;
   }
@@ -257,20 +262,23 @@
     transform: translate;
     transition: all 0.2s ease;
   }
-  .home_nav{
-    backdrop-filter:unset !important;
+  .home_nav {
+    backdrop-filter: unset !important;
   }
-  .home_nav button span{
+  .home_nav button span {
     top: 0;
     left: 0;
   }
-  .home_nav button span svg{
-    @apply text-color-third
+  .home_nav button span svg {
+    @apply text-color-third;
   }
-
-  @media screen and (max-width:650px){
+  @media screen and (max-width: 1023px) {
+    .navigation a {
+      font-size: 4vw;
+    }
+  }
+  @media screen and (max-width: 650px) {
     .next-btn {
-   
       right: -23px;
     }
   }
