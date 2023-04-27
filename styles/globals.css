@@ -107,6 +107,17 @@
       margin-bottom: 19px;
     }
   }
+  .social-icon:hover {
+   @apply bg-color-third
+  }
+  .social-icon:hover img{
+   filter: brightness(6);
+   transform: translate;
+   transition: all 0.2s ease ;
+  }
+
+}
+@layer utilities{
 
   .hero-bg {
     background-image: linear-gradient(98.79deg, #5cdb94 38.42%, #2e35ff46),
