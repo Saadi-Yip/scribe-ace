@@ -19,7 +19,7 @@ const Services = (props: Prop) => {
   return (
     <section>
 
-      <div className="flex justify-between">
+      <div className="">
           <Content data = {props.data}/>
         </div>
 
