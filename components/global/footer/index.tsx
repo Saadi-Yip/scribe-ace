@@ -1,4 +1,4 @@
-import Link from "next/link";
+ 
 const Footer = () => {
   return (
     <footer className="w-full bg-cover bg">
