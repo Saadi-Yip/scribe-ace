@@ -24,11 +24,15 @@
       max-width: 1250px;
       padding: 50px 14px;
   }
-  .white:hover{
+  .social-icon:hover {
+   @apply bg-color-third
+  }
+  .social-icon:hover img{
    filter: brightness(6);
    transform: translate;
    transition: all 0.2s ease ;
   }
+
 }
 @layer utilities{
 

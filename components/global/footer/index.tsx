@@ -1,3 +1,5 @@
+import Link from "next/link";
+
  
 const Footer = () => {
   return (
@@ -18,7 +20,7 @@ const Footer = () => {
             <div className=" sm:flex-col md:flex-row lg:ml-20 sm:ml-7 mt-1 sm:mt-0">
               <ul className="">
                 <li className="font-medium lg:text-sm text-black opacity-40 my-3 ">
-                  <Link href="#">Book Publishing</Link>
+                <Link href="#">Book Publishing</Link>
                 </li>
                 <li className="font-medium lg:text-sm text-black opacity-40 my-3">
                   <Link href="#">Book Editing</Link>
@@ -79,14 +81,15 @@ const Footer = () => {
       </div>
       <div className="max-w-[1252px] mx-auto py-4 flex md:flex-row gap-4 md:gap-0 flex-col justify-center items-center md:justify-between ">
           <div className="flex space-x-3 ml-4 ">
-            <span className=" bg-[#FFFFFF] rounded-[50%] h-12 w-12 flex items-center justify-center hover:bg-[#389583]">
+            
+            <span className=" bg-[#FFFFFF] rounded-[50%] h-12 w-12 flex items-center justify-center social-icon">
               <img src="iconFirst.png" alt="#" className="white"  />
             </span>
 
-            <span className="bg-[#FFFFFF] rounded-[50%]  h-12 w-12 flex items-center justify-center hover:bg-[#389583]">
+            <span className="bg-[#FFFFFF] rounded-[50%]  h-12 w-12 flex items-center justify-center social-icon">
               <img src="iconeTwo.png" alt="#" className="white" />
             </span>
-            <span className="bg-[#FFFFFF] rounded-[50%]  h-12 w-12 flex items-center justify-center hover:bg-[#389583]">
+            <span className="bg-[#FFFFFF] rounded-[50%]  h-12 w-12 flex items-center justify-center social-icon">
               <img src="iconThree.png" alt="#" className="white" />
             </span>
           </div>
