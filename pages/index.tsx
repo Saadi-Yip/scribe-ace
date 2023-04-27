@@ -10,6 +10,7 @@ import Blogs from "@/components/global/writing-blogs";
 import Portfolio from "@/components/global/portfolio";
 import Pricing from "@/components/global/pricing"; 
 import Footer from "@/components/global/footer"; 
+import Head from "next/head";
 
 //&& Blogs Props &&//
 const blogs_data = [
@@ -57,18 +58,23 @@ export default function Home() {
   ];
 
   return (
-    <main>
-      <Header /> 
-      <Hero heading={heading} description={description} listing={listing} />
-      <Services />
-      <Cta />
-      <Steps />
-      <Benifits/>
-      <Blogs data={blogs_data} />
-      <Portfolio/>
-      <Pricing />
-      <Testimonials /> 
-      <Footer/> 
-    </main>
+    <>
+      <Head>
+        <title>Home</title>
+      </Head>
+      <main>
+        <Header /> 
+        <Hero heading={heading} description={description} listing={listing} />
+        <Services />
+        <Cta />
+        <Steps />
+        <Benifits/>
+        <Blogs data={blogs_data} />
+        <Portfolio/>
+        <Pricing />
+        <Testimonials /> 
+        <Footer/> 
+      </main>
+    </>
   );
 }
