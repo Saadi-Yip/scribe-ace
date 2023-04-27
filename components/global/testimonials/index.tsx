@@ -15,7 +15,7 @@ const Testimonials = () => {
   const { width } = useDimensions();
 
   return (
-    <section className="container w-[90%] mx-auto mt-2 py-10">
+    <section className="container w-[90%] mx-auto pt-8 pb-14">
       <h5 className="md:text-3xl text-color-third text-2xl font-bold mb-2 text-center">
         See What Our Clients Say About Us
       </h5>

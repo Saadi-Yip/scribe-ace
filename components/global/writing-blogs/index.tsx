@@ -19,7 +19,7 @@ type Prop = {
 const Blogs = (props: Prop) => {
   return (
     <section className="container xl:max-w-[80%] lg:max-w-[90%] max-w-[80%] mx-auto mt-2 py-10 relative">
-      <h5 className="md:text-3xl text-color-third text-2xl font-bold mb-2 text-center">
+      <h5 className="md:text-3xl text-color-third text-2xl font-medium mb-2 text-center">
         Our Elite Book Writing Service Expertise
       </h5>
       <Slides data = {props.data}/>

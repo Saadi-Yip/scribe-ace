@@ -41,11 +41,12 @@ const Steps = () => {
     },
   ];
   return (
-    <section>
+    <section className="my-16">
       <div className="text-center">
-        <h2 className="text-color-primary text-4xl">
+        <h2 className="text-color-third text-4xl max-sm:text-2xl font-medium">
           Our Process Explained: How it Works
         </h2>
+        <p className="text-lg mt-4 text-center text-black max-sm:text-xs">Steps To Success</p>
       </div>
       <div className="steps_sec m-auto max-w-7xl px-5 py-11 relative my-8">
         {data.map(({heading,text,num}:props, i:number) => {

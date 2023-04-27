@@ -6,12 +6,12 @@ import data from './data.json'
 function Services() {
    
   return (
-    <section className="bg-[#04099212]">
+    <section className="bg-[#04099212] pt-16 pb-10">
       <div className="text-gray-950 xl:w-[90%] lg:w-[100%] md:w-[90%] w-[95%] mx-auto">
-        <h1 className="font-extrabold text-3xl text-center pt-6 max-sm:text-2xl text-[#389583]">
+        <h1 className="font-extrabold text-4xl text-center max-sm:text-2xl text-[#389583]">
           How does the leading website design agency in USA work?
         </h1>
-        <p className="text-sm mt-4 mb-16 text-center text-black max-sm:text-xs max-w-[72%] mx-auto">
+        <p className="text-lg mt-4 mb-16 text-center text-black max-sm:text-xs max-w-[72%] mx-auto">
           Web Developers INC focuses on delivering highly competitive web
           designing services for different businesses around the country.
           Whether it's an emerging fashion brand or a construction company, our
@@ -23,7 +23,7 @@ function Services() {
           {data.item.map((item:any, i:number) =>{
             return <div
             className="p-2 py-4 bg2 pt-16 max-sm:pt-6 lg:w-[27%] xl:max-w-[22%] mr-6 border-4 border-color-primary hover-class hover:border-gray-300
-           w-full sm:w-[40%] md:w-[46%]  mb-6 shadow-xl rounded-[50px]"
+           w-full sm:w-[40%] md:w-[46%] mb-8 shadow-xl rounded-[50px] work_col"
           >
             <div className="w-20 h-16 mb-16 inline-flex items-center ">
               <img className="ml-6" src={item.url} alt="" />

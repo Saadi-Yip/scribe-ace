@@ -1,8 +1,8 @@
 const Benifits=()=>{
     return(
         <section className="text-gray-600 body-font testimonials-bg">
-        <div className="container px-5 md:py-24 py-14 mx-auto">
-          <h1 className="sm:text-4xl text-2xl font-bold title-font text-center text-color-secondary mb-20">Benefits Of Our Content
+        <div className="container px-5 md:py-20 py-14 mx-auto">
+          <h1 className="sm:text-4xl text-2xl font-medium title-font text-center text-color-secondary mb-20">Benefits Of Our Content
           </h1>
           <div className="flex flex-wrap  sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
             <div className="p-4 md:w-1/2 flex flex-col ">
