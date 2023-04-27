@@ -13,7 +13,7 @@ const Footer = () => {
           </p>
         </div>
         <div>
-          <h3 className="text-color-secondary font-bold text-md lg:ml-20 sm:ml-7 mt-6 sm:mt-0">
+          <h3 className="text-color-secondary font-bold text-md lg:ml-20 sm:ml-7 mt-6 sm:mt-0 md:ml-0">
             Services
           </h3>
           <div className="flex flex-col sm:flex-row md:flex-row  lg:flex-row">
@@ -30,7 +30,7 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div className=" sm:flex-col md:flex-row lg:ml-20 sm:ml-7 mt-1 sm:mt-0 pt-6 md:pt-0">
+            <div className=" sm:flex-col md:flex-row lg:ml-20 sm:ml-7 mt-1 sm:mt-0 sm:pt-6 md:pt-0">
               <ul className="">
                 <li className="font-medium lg:text-sm text-black opacity-40 my-3 ">
                   <Link href="#">Ghost Writing</Link>
@@ -43,7 +43,7 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div className=" sm:flex-col md:flex-row lg:ml-20 sm:ml-7 pt-6 md:pt-0">
+            <div className=" sm:flex-col md:flex-row lg:ml-20 sm:ml-7 sm:pt-6 md:pt-0">
               <ul className="">
                 <li className="font-medium lg:text-sm text-black opacity-40 my-3 ">
                   <Link href="#">Proof Reading</Link>
@@ -59,7 +59,7 @@ const Footer = () => {
         <div className="pr-10 mt-3 sm:mt-0">
           <select
             id="countries"
-            className="bg-color-primary text-color-secondary text-md block mb-8 bg-transparent focus:bg-transparent focus:border-0 focus:outline-none font-bold "
+            className="bg-color-primary  text-color-secondary text-md block mb-8 bg-transparent focus:bg-transparent focus:border-0 focus:outline-none font-bold "
           >
             <option selected className="text-color-fourth">
               Languages

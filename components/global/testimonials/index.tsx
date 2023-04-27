@@ -19,8 +19,8 @@ const Testimonials = (props: Prop) => {
   const { width } = useDimensions();
 
   return (
-    <section className="container max-w-[90%] mx-auto mt-2 py-10 relative">
-      <h5 className="md:text-3xl text-color-third text-2xl font-bold mb-2 text-center">
+    <section className="container max-w-[90%] mx-auto mt-2 sm:pb-10 pb-8  relative">
+      <h5 className="md:text-3xl text-color-third text-2xl font-bold mb-2 lg:text-4xl text-center">
         See What Our Clients Say About Us
       </h5>
       <Slides testimonials = {props.testimonials}/>

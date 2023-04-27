@@ -14,40 +14,40 @@ const Benifits = (props: benefits) => {
   return (
     <section className="text-gray-600 body-font testimonials-bg">
       <div className="container px-5 md:py-24 py-14 mx-auto">
-        <h1 className="sm:text-4xl text-2xl font-bold title-font text-center text-color-secondary mb-20">
+        <h1 className="sm:text-4xl text-2xl font-bold title-font text-center text-color-secondary md:text-3xl lg:text-4xl sm:mb-14 mb-8">
           Benefits Of Our Content
         </h1>
         <div className="flex flex-wrap  sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
-          <div className="p-4 md:w-1/2 flex flex-col ">
+          <div className="px-4 md:w-1/2 flex text-left flex-col ">
             {props.benefits1.map((item:any, i:number) => {
 
-              return <div className="flex md:mb-16 mb-10" key = {i.toString()}>
+              return <div className="sm:flex md:mb-16 px-4 mb-10" key = {i.toString()}>
               <div className="xl:w-20 xl:h-20 md:w-14 md:h-14 w-12 h-12 inline-flex items-center justify-center rounded-full  text-indigo-500 mb-4 flex-shrink-0">
                 <img src = {item.url} alt="" />
               </div>
-              <div className="flex-grow pl-6">
-                <h2 className="text-color-secondary text-xl title-font font-bold mb-2 px-3">
+              <div className="flex-grow sm:pl-6">
+                <h2 className="text-color-secondary text-xl title-font font-bold mb-2 sm:px-3">
                   {item.title}
                 </h2>
-                <p className="leading-6 max-w-xl lg:text-lg text-sm font-normal lg:font-medium text-color-fifth opacity-70 px-3">
+                <p className="leading-6 max-w-xl lg:text-lg text-sm font-normal lg:font-medium text-color-fifth opacity-70 sm:px-3">
                   {item.details}
                 </p>
               </div>
             </div>
             })}
           </div>
-          <div className="p-4 md:w-1/2 flex flex-col">
+          <div className="px-4 md:w-1/2 flex text-left flex-col">
           {props.benefits2.map((item:any, i:number) => {
 
-            return  <div className="flex md:mb-16 mb-10" key={i.toString()}>
+            return  <div className=" sm:flex md:mb-16 sm:mb-10 px-4 mb-10" key={i.toString()}>
             <div className="xl:w-20 xl:h-20 md:w-14 md:h-14 w-12 h-12 inline-flex items-center justify-center rounded-full  text-indigo-500 mb-4 flex-shrink-0">
               <img src="setting.png" alt="" />
             </div>
-            <div className="flex-grow pl-6">
-              <h2 className="text-color-secondary text-xl title-font font-bold mb-2 px-3">
+            <div className="flex-grow sm:pl-6">
+              <h2 className="text-color-secondary text-xl title-font font-bold mb-2 sm:px-3">
                 Professional In-house Team
               </h2>
-              <p className="leading-6 text-base max-w-xl lg:text-lg text-sm font-normal lg:font-medium text-color-fifth opacity-70 px-3">
+              <p className="leading-6 text-base max-w-xl lg:text-lg text-sm font-normal lg:font-medium text-color-fifth opacity-70 sm:px-3">
                 Behind all of our content is a team of 4 word masters. Our
                 copy editors work closely with our team of writers to produce
                 the custom content with all the specifications you want,
