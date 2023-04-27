@@ -1,110 +1,17 @@
 import PriceBox from "@/components/global/pricing/PriceBox";
-
-const Pricing = () => {
-  const prices = [
-    {
-      name: "Basic",
-      save: "Save 33% ",
-      price: "$10",
-      monthly: "$ 33 /Month",
-      packageList: [
-        {
-          list: "Creating/updating the outline.",
-        },
-        {
-          list: "Completing your book as per the requirements/outline.",
-        },
-        {
-          list: "Adjusting layout presentation for the publishing standards",
-        },
-        {
-          list: "Add Up to 10-15 Pictures",
-        },
-        {
-          list: "Unlimited revisions.",
-        },
-        {
-          list: "Dedicated team of expert writers.",
-        },
-        {
-          list: "Complete Ownership Rights.",
-        },
-        {
-          list: "Editing, Proofreading, and formatting",
-        },
-      ],
-      number: "+1(347)-795-0173",
-      start: "Let’s Chat",
-    },
-    {
-      name: "Startup",
-      save: "Save 33% ",
-      price: "$10",
-      monthly: "$ 33 /Month",
-      packageList: [
-        {
-          list: "Creating/updating the outline.",
-        },
-        {
-          list: "Completing your book as per the requirements/outline.",
-        },
-        {
-          list: "Adjusting layout presentation for the publishing standards",
-        },
-        {
-          list: "Add Up to 10-15 Pictures",
-        },
-        {
-          list: "Unlimited revisions.",
-        },
-        {
-          list: "Dedicated team of expert writers.",
-        },
-        {
-          list: "Complete Ownership Rights.",
-        },
-        {
-          list: "Editing, Proofreading, and formatting",
-        },
-      ],
-      number: "+1(347)-795-0173",
-      start: "Let’s Chat",
-    },
-    {
-      name: "Ultimate",
-      save: "Save 33% ",
-      price: "$10",
-      monthly: "$ 33 /Month",
-      packageList: [
-        {
-          list: "Creating/updating the outline.",
-        },
-        {
-          list: "Completing your book as per the requirements/outline.",
-        },
-        {
-          list: "Adjusting layout presentation for the publishing standards",
-        },
-        {
-          list: "Add Up to 10-15 Pictures",
-        },
-        {
-          list: "Unlimited revisions.",
-        },
-        {
-          list: "Dedicated team of expert writers.",
-        },
-        {
-          list: "Complete Ownership Rights.",
-        },
-        {
-          list: "Editing, Proofreading, and formatting",
-        },
-      ],
-      number: "+1(347)-795-0173",
-      start: "Let’s Chat",
-    },
-  ];
+type Price = {
+  prices: {
+    name: string,
+    save: string,
+    price: string,
+    monthly: string,
+    packageList: string,
+    number: string,
+    start: string
+  }[]
+}
+const Pricing = (props: Price) => {
+  
   return (
     <section>
       <div className="container m-auto px-3">
@@ -113,7 +20,7 @@ const Pricing = () => {
         </div>
 
         <div className="flex justify-between flex-col sm:flex-row my-6">
-          {prices.map((data: any, i: number) => (
+          {props.prices.map((data: any, i: number) => (
             <PriceBox
               key={i.toString()}
               name={data.name}

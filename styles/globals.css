@@ -179,13 +179,26 @@
     height: 90px;
     left: -47px;
     top: 0;
-    bottom: 0;
-    background: transparent;
+    bottom: 0; 
   }
 
   .next-btn {
     width: 90px;
     height: 90px; 
+    right:-45px; 
+    top: 0;
+    bottom: 0;
+  }
+  .prev-btn-testimonial { 
+    width: 100px;
+    height: 100px;
+    left: -47px;
+    top: 0;
+    bottom: 0; 
+  }
+  .next-btn-testimonial { 
+    width: 100px;
+    height: 100px; 
     right:-45px; 
     top: 0;
     bottom: 0;
