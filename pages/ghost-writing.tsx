@@ -29,7 +29,7 @@ export default function GhostWriting() {
         listing={props.hero_home.listing}
         data = {props.statistics_home}
       />
-      <Services />
+      <Services data = {props.service_data}/>
       <Cta title = {props.cta_title} details = {props.cta_details}/>
       <Steps steps = {props.steps_home}/> 
       <Blogs data={props.blogs_home} />

@@ -62,7 +62,7 @@ const Portfolio = () => {
             return (
               <SwiperSlide>
                 <div className="flex w-full md:py-5">
-                  <img alt="gallery" className="object-cover " src={data.img} />
+                  <img alt="gallery" src={data.img} />
                 </div>
               </SwiperSlide>
             );
