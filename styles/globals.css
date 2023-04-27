@@ -197,6 +197,20 @@
     top: 0;
     bottom: 0;
   }
+  .prev-btn-testimonial { 
+    width: 100px;
+    height: 100px;
+    left: -47px;
+    top: 0;
+    bottom: 0; 
+  }
+  .next-btn-testimonial { 
+    width: 100px;
+    height: 100px; 
+    right:-45px; 
+    top: 0;
+    bottom: 0;
+  }
   .pricing_sec {
     border: 2px solid rgba(0, 240, 255, 1);
   }
