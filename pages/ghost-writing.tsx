@@ -11,6 +11,7 @@ import Pricing from "@/components/global/pricing";
 import Footer from "@/components/global/footer";
 import props from "./props.json"
 
+
 export default function GhostWriting() {
   return (
     <>
