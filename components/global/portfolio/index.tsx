@@ -43,7 +43,7 @@ const Portfolio = () => {
     <section className="text-gray-600 body-font testimonials-bg w-full pb-10">
       <div className=" mx-auto">
         <div className="flex flex-col text-center w-full mb-10">
-          <h1 className="xl:text-4xl font-medium lg:text-3xl lg:font-bold text-2xl title-font mb-4 text-color-secondary mt-16 px-4">
+          <h1 className="xl:text-4xl font-medium lg:text-3xl md:text-3xl lg:font-bold text-2xl title-font mb-4 text-color-secondary mt-16 px-4">
             Books We've Published
           </h1>
           <p className=" mx-auto leading-6 text-base xl:text-xl lg:text-lg  text-md px-3 font-normal text-color-fifth">
@@ -52,7 +52,7 @@ const Portfolio = () => {
           </p>
         </div>
         <Swiper
-          slidesPerView={width < 600 ? 3 : 8}
+          slidesPerView={(width < 600 ) ? 3 : (width < 800 ) ? 5 : 8}
           spaceBetween={0}
           loop={true}
           pagination={false}

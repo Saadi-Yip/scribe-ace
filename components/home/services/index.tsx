@@ -8,7 +8,7 @@ function Services() {
   return (
     <section className="bg-[#04099212] pt-16 pb-10">
       <div className="text-gray-950 xl:w-[90%] lg:w-[100%] md:w-[90%] w-[95%] mx-auto">
-        <h1 className="font-extrabold text-4xl text-center max-sm:text-2xl text-[#389583]">
+        <h1 className="font-extrabold text-4xl text-center max-sm:text-2xl text-[#389583] md:text-3xl">
           How does the leading website design agency in USA work?
         </h1>
         <p className="text-lg mt-4 mb-16 text-center text-black max-sm:text-xs max-w-[72%] mx-auto">

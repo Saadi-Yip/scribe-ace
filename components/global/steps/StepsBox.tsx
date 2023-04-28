@@ -8,7 +8,7 @@ const StepsBox = ({ heading, text, num }: props) => {
     <>
       <div className="step_box bg2 relative">
         <h6 className="text-xl text-color-fourth font-medium">{heading}</h6>
-        <p className="text-lg">{text}</p>
+        <p className="lg:text-lg md:text-[16px] text-[16px]">{text}</p>
       </div>
       <div className="flex items-center number_row absolute right-0 left-0 m-auto w-fit z-10 top-6">
         <Image src={icon} alt="" />
