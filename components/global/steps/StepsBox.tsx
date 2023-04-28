@@ -1,12 +1,17 @@
 import Image from "next/image";
 import icon from "../../../public/assets/images/icon.png";
-import { props } from ".";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
-
-const StepsBox = ({ heading, text, num }: props) => {
+const StepsBox = ({heading, text, num,style }: any) => {
+  useEffect(() => {
+    AOS.init();
+  }, [])
   return (
     <>
-      <div className="step_box bg2 relative">
+      <div className="step_box bg2 relative" data-aos={style} data-aos-offset="300"
+     data-aos-easing="ease-in-sine" data-aos-once="true" data-aos-duration="500">
         <h6 className="text-xl text-color-fourth font-medium">{heading}</h6>
         <p className="lg:text-lg md:text-[16px] text-[16px]">{text}</p>
       </div>
