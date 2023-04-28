@@ -43,9 +43,9 @@ export default function Header() {
         className="p-1 font-normal"
       >
         <Link
-          href="/website-development"
+          href="/book-publishing"
           className={` ${
-            router.pathname === "/website-development"
+            router.pathname === "/book-publishing"
               ? "text-color-fourth"
               : "text-color-primary"
           } flex items-center   font-semibold text-md`}
@@ -60,9 +60,9 @@ export default function Header() {
         className="p-1 font-normal"
       >
         <Link
-          href="/logo-design"
+          href="/book-editing"
           className={`${
-            router.pathname === "/logo-design"
+            router.pathname === "/book-editing"
               ? "text-color-fourth"
               : "text-color-primary"
           } flex items-center font-semibold text-md`}
@@ -77,9 +77,9 @@ export default function Header() {
         className="p-1 font-normal"
       >
         <Link
-          href="/seo"
+          href="/book-marketing"
           className={`${
-            router.pathname === "/seo"
+            router.pathname === "/book-marketing"
               ? "text-color-fourth"
               : "text-color-primary"
           } flex items-center font-semibold text-md`}
@@ -94,9 +94,9 @@ export default function Header() {
         className="p-1 font-normal"
       >
         <Link
-          href="/mobile-development"
+          href="/ghost-writing"
           className={`${
-            router.pathname === "/mobile-development"
+            router.pathname === "/ghost-writing"
               ? "text-color-fourth"
               : "text-color-primary"
           } flex items-center font-semibold text-md`}
@@ -111,8 +111,12 @@ export default function Header() {
         className="p-1 font-normal"
       >
         <Link
-          href="#"
-          className="flex items-center text-color-primary font-semibold text-md"
+          href="/illustration"
+          className={`${
+            router.pathname === "/illustration"
+              ? "text-color-fourth"
+              : "text-color-primary"
+          } flex items-center font-semibold text-md`}
         >
           Illustration Designs
         </Link>
@@ -124,8 +128,12 @@ export default function Header() {
         className="p-1 font-normal"
       >
         <Link
-          href="#"
-          className="flex items-center text-color-primary font-semibold text-md"
+          href="/script-writing"
+          className={`${
+            router.pathname === "/script-writing"
+              ? "text-color-fourth"
+              : "text-color-primary"
+          } flex items-center font-semibold text-md`}
         >
           Script Writing
         </Link>
@@ -137,8 +145,12 @@ export default function Header() {
         className="p-1 font-normal"
       >
         <Link
-          href="#"
-          className="flex items-center text-color-primary font-semibold text-md"
+          href="/proof-reading"
+          className={`${
+            router.pathname === "/proof-reading"
+              ? "text-color-fourth"
+              : "text-color-primary"
+          } flex items-center font-semibold text-md`}
         >
           Proof Reading
         </Link>
@@ -150,8 +162,12 @@ export default function Header() {
         className="p-1 font-normal"
       >
         <Link
-          href="#"
-          className="flex items-center text-color-primary font-semibold text-md"
+          href="/book-cover-design"
+          className={`${
+            router.pathname === "/book-cover-design"
+              ? "text-color-fourth"
+              : "text-color-primary"
+          } flex items-center font-semibold text-md`}
         >
           Book Cover Design
         </Link>
