@@ -1,4 +1,6 @@
 import Link from "next/link";
+
+ 
 const Footer = () => {
   return (
     <footer className="w-full bg-cover testimonials-bg">
@@ -11,14 +13,14 @@ const Footer = () => {
           </p>
         </div>
         <div>
-          <h3 className="text-color-secondary font-bold text-md lg:ml-20 sm:ml-7 mt-6 sm:mt-0">
+          <h3 className="text-color-secondary font-bold text-md lg:ml-20 sm:ml-7 mt-6 sm:mt-0 md:ml-0">
             Services
           </h3>
           <div className="flex flex-col sm:flex-row md:flex-row  lg:flex-row">
             <div className=" sm:flex-col md:flex-row lg:ml-20 sm:ml-7 mt-1 sm:mt-0">
               <ul className="">
                 <li className="font-medium lg:text-sm text-black opacity-40 my-3 ">
-                  <Link href="#">Book Publishing</Link>
+                <Link href="#">Book Publishing</Link>
                 </li>
                 <li className="font-medium lg:text-sm text-black opacity-40 my-3">
                   <Link href="#">Book Editing</Link>
@@ -28,7 +30,7 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div className=" sm:flex-col md:flex-row lg:ml-20 sm:ml-7 mt-1 sm:mt-0 pt-6 md:pt-0">
+            <div className=" sm:flex-col md:flex-row lg:ml-20 sm:ml-7 mt-1 sm:mt-0 sm:pt-6 md:pt-0">
               <ul className="">
                 <li className="font-medium lg:text-sm text-black opacity-40 my-3 ">
                   <Link href="#">Ghost Writing</Link>
@@ -41,7 +43,7 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div className=" sm:flex-col md:flex-row lg:ml-20 sm:ml-7 pt-6 md:pt-0">
+            <div className=" sm:flex-col md:flex-row lg:ml-20 sm:ml-7 sm:pt-6 md:pt-0">
               <ul className="">
                 <li className="font-medium lg:text-sm text-black opacity-40 my-3 ">
                   <Link href="#">Proof Reading</Link>
@@ -57,7 +59,7 @@ const Footer = () => {
         <div className="pr-10 mt-3 sm:mt-0">
           <select
             id="countries"
-            className="bg-color-primary text-color-secondary text-md block mb-8 bg-transparent focus:bg-transparent focus:border-0 focus:outline-none font-bold "
+            className="bg-color-primary  text-color-secondary text-md block mb-8 bg-transparent focus:bg-transparent focus:border-0 focus:outline-none font-bold "
           >
             <option selected className="text-color-fourth">
               Languages
@@ -79,14 +81,15 @@ const Footer = () => {
       </div>
       <div className="max-w-[1252px] mx-auto py-4 flex md:flex-row gap-4 md:gap-0 flex-col justify-center items-center md:justify-between ">
           <div className="flex space-x-3 ml-4 ">
-            <span className=" bg-[#FFFFFF] rounded-[50%] h-12 w-12 flex items-center justify-center hover:bg-[#389583]">
+            
+            <span className=" bg-[#FFFFFF] rounded-[50%] h-12 w-12 flex items-center justify-center social-icon">
               <img src="iconFirst.png" alt="#" className="white"  />
             </span>
 
-            <span className="bg-[#FFFFFF] rounded-[50%]  h-12 w-12 flex items-center justify-center hover:bg-[#389583]">
+            <span className="bg-[#FFFFFF] rounded-[50%]  h-12 w-12 flex items-center justify-center social-icon">
               <img src="iconeTwo.png" alt="#" className="white" />
             </span>
-            <span className="bg-[#FFFFFF] rounded-[50%]  h-12 w-12 flex items-center justify-center hover:bg-[#389583]">
+            <span className="bg-[#FFFFFF] rounded-[50%]  h-12 w-12 flex items-center justify-center social-icon">
               <img src="iconThree.png" alt="#" className="white" />
             </span>
           </div>
