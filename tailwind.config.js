@@ -27,7 +27,8 @@ module.exports = {
         "color-fourth": "#05396B",
         "color-fifth": "rgba(0, 0, 0, 0.7)", 
         "color-sixth": "#2E35FF",
-        "color-seventh": "#2E3092",
+        "color-seventh": "#2E3092"
+
       },
     },
   },

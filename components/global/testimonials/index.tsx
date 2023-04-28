@@ -55,7 +55,7 @@ const Slides = (props: Prop) => {
               <div className="flex flex-wrap justify-center">
                 <div className=" w-full lg:w-8/12 px-0">
                   <div className="shadow-xl p-2 swiper-head testimonials-bg text-center rounded-3xl py-4 mt-12 relative">
-                    <img src = {user.url} className = "mx-auto testimonial-img -mt-[90px] rounded-full w-36 h-36" alt = ""/>
+                    <img src = {user.url} className = "mx-auto testimonial-img -mt-[90px] rounded-full w-36 h-36 object-cover" alt = ""/>
                     <h3 className="text-[#05396B] leading-6 text-xl py-6 font-bold">{user.name}</h3>
                     <h5 className="text-[#3D3D3D] leading-5 text-lg">{user.role}</h5>
                     <p className="text-[#1d1a1a] md:text-xl md:p-4 mt-4 w-[85%]  text-md leading-6  tracking-tight md:tracking-normal text-center italic mx-auto shadow-uyjh67\1741xl font-medium md:leading-7 mb-16">
