@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import { Autoplay } from "swiper";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -8,6 +8,36 @@ import useDimensions from "@/hooks/use-dimensions";
 const Portfolio = () => {
   const {width} = useDimensions()
   const data = [
+    {
+      img: "poster.png",
+    },
+    {
+      img: "Poster (1).png",
+    },
+    {
+      img: "poster (2).png",
+    },
+    {
+      img: "poster (3).png",
+    },
+    {
+      img: "poster (4).png",
+    },
+    {
+      img: "poster (5).png",
+    },
+    {
+      img: "poster (6).png",
+    },
+    {
+      img: "poster (3).png",
+    },
+    {
+      img: "poster.png",
+    },
+    {
+      img: "poster (2).png",
+    },
     {
       img: "poster.png",
     },
@@ -54,9 +84,14 @@ const Portfolio = () => {
         <Swiper
           slidesPerView={(width < 600 ) ? 3 : (width < 800 ) ? 5 : 8}
           spaceBetween={0}
-          loop={true}
+            
           pagination={false}
+          autoplay={{
+            delay: 1500,
+            disableOnInteraction: false,
+          }}
           className="mySwiper"
+          modules={[Autoplay]}
         >
           {data.map((data:any, i:number) => {
             return (

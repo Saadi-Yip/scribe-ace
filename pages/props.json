@@ -220,7 +220,14 @@
         {"url":"graph.png", "title": "Boost Your SEO and Your Sales and Leads", "details": "Behind all of our content is a team of 4 word masters. Our copy editors work closely with our team of writers to produce the custom content with all the specifications you want, whether a short and sweet brief or a detailed, in-depth one is provided. As a content writing services company we have helped more than 200 hundred different clients with their content writing in the last two years alone, and we want this number to grow." }
     ],
     "cta_title" : "Industry-Leading Professional Elite Book Writers For Hire",
-    "cta_details" : "To determine which content writing service will suit your needs, explore what we offer at our content writing services company."
+    "cta_details" : "To determine which content writing service will suit your needs, explore what we offer at our content writing services company.",
+
+
+    "hero_book_editing": {
+        "heading": "Industry-Leading Professional Elite Book Writers For Hire",
+        "description": "Authors Writing Club provides experienced and expert editors and proofreaders to ensure the quality your manuscript needs to become a bestseller. So what are you waiting for? Give us a call!"
+    }
+
 }
   
   

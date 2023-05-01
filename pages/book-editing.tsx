@@ -24,9 +24,8 @@ export default function BookEditing() {
       <main>
       <Header />
       <Hero
-        heading={props.hero_home.heading}
-        description={props.hero_home.description}
-        listing={props.hero_home.listing}
+        heading={props.hero_book_editing.heading}
+        description={props.hero_book_editing.description} 
         data = {props.statistics_home}
       />
       <Services data = {props.service_data}/>

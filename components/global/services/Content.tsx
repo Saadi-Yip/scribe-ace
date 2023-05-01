@@ -16,12 +16,12 @@ const Content = (props: Prop) => {
 
         </div>
 
-         <div className="flex flex-col md:items-start md:text-center">
+         <div className="md:pl-16 lg:pl-0 lg:pr-8 flex flex-col md:items-start md:text-left  xl:mb-0 text-left">
 
-          <h1 className="title-font sm:mx-24 mx-8 lg:mx-0  xl:text-3xl md:text-2xl xl:pr-10 mb-4 sm:font-bold text-color-third text-xl font-semibold">{props.data.protect}
+          <h1 className="px-8 lg:px-0 title-font sm:pr-8 mb-4 md:max-w-3xl xl:text-3xl md:text-2xl sm:font-bold text-color-third text-xl font-semibold">{props.data.protect}
           </h1>
 
-          <p className="mb-8 leading-5 mx-8 lg:mx-0  md:pr-10  text-color-fifth opacity-70 xl:text-xl sm:text-sm sm:text-left sm:mx-24 text-sm font-normal md:leading-7">{props.data.handpick}
+          <p className="mb-8 leading-5 mx-8 lg:mx-0 text-left md:pr-10  text-color-fifth opacity-70 xl:text-xl sm:text-sm sm:text-left sm:pr-8 text-sm font-normal md:leading-7">{props.data.handpick}
           </p>
         </div> 
       </div>

@@ -9,7 +9,7 @@ const Content = ({ heading, description, listing}: Prop) => {
         {description}
       </p>
       <ul className={`mb-6 space-y-3 lg:py-3 lg:text-left md:text-center text-white`}>
-        {listing.map((list: string, i: number) => {
+        {listing?.map((list: string, i: number) => {
           return (
             <li className="flex items-center space-x-3" key={i.toString()}>
               <svg

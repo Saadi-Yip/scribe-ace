@@ -15,8 +15,14 @@ const StepsBox = ({heading, text, num,style }: any) => {
         <h6 className="text-xl text-color-fourth font-medium">{heading}</h6>
         <p className="lg:text-lg md:text-[16px] text-[16px]">{text}</p>
       </div>
-      <div className="flex items-center number_row absolute right-0 left-0 m-auto w-fit z-10 top-6">
-        <Image src={icon} alt="" />
+      <div className="flex items-center number_row absolute right-0 left-0 m-auto w-fit z-10 top-6"
+        data-aos="fade-in-out"   
+        data-aos-delay="300"
+        data-aos-offset="300"
+        data-aos-once="true"  
+      >
+        <Image src={icon} alt="" 
+        />
         <h6 className="text-color-primary text-4xl font-semibold">{num}</h6>
       </div>
     </>
