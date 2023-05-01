@@ -1,4 +1,4 @@
-import { Navigation } from "swiper";
+import { Navigation, Autoplay } from "swiper";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
@@ -38,7 +38,9 @@ const Slides = (props: Prop) => {
         slidesPerView={width < 640 ? 1 : 3 && width < 1023 ? 2 : 3} 
         spaceBetween={30}
         loop={true}
-        modules={[Navigation]}
+        centeredSlides = {true}
+        modules={[Navigation, Autoplay]}
+        autoplay = {true}
         onBeforeInit={(swiper) => {
           swiperRef.current = swiper;
         }}

@@ -20,13 +20,14 @@ const Steps = (props:Prop) => {
         <p className="text-lg mt-4 text-center text-black max-sm:text-xs">Steps To Success</p>
       </div>
       <div className="steps_sec m-auto max-w-7xl px-5 pt-11 relative my-8">
-        {props.steps.map(({heading,text,num}:any, i:number) => {
+        {props.steps.map(({heading,text,num,style}:any, i:number) => {
           return (
             <div key={i.toString()} className="flex steps_row relative">
               <StepsBox
                 heading={heading}
                 text={text}
                 num={num}
+                style={style}
               />
             </div>
           );

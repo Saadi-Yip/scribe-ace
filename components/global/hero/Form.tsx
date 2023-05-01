@@ -39,6 +39,7 @@ const Form = () => {
         if(response.ok){
           toast('submitted');
           e.target.reset();
+          formRef.current.phone.value = ''
         }
       }
     } catch (error) {

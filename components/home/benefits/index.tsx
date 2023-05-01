@@ -18,7 +18,7 @@ const Benifits = (props: benefits) => {
           Benefits Of Our Content
         </h1>
         <div className="flex flex-wrap  sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
-          <div className="px-4 md:w-1/2 flex text-left flex-col ">
+          <div className="px-4 md:w-1/2 flex lg:text-left text-center flex-col ">
             {props.benefits1.map((item:any, i:number) => {
 
               return <div className="sm:flex md:mb-16 px-4 mb-10" key = {i.toString()}>
@@ -36,7 +36,7 @@ const Benifits = (props: benefits) => {
             </div>
             })}
           </div>
-          <div className="px-4 md:w-1/2 flex text-left flex-col">
+          <div className="px-4 md:w-1/2 flex lg:text-left text-center flex-col">
           {props.benefits2.map((item:any, i:number) => {
 
             return  <div className=" sm:flex md:mb-16 sm:mb-10 px-4 mb-10" key={i.toString()}>
