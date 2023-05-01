@@ -5,8 +5,7 @@ import Statistics from "../statistics";
   type Prop = {
     heading: string;
     description: string;
-    listing: string[]; 
-    url?: string;
+    listing?: string[]; 
     data: {title:string, count:number}[]
   };
  
@@ -18,7 +17,7 @@ const Hero = (props: Prop ) => {
           
           <div className="container w-4/5 mx-auto">
             <div className="flex flex-wrap items-center">
-              <Content heading = {props.heading} description= {props.description} listing={props.listing}/>
+              <Content heading = {props.heading} description= {props.description} listing={props.listing&&props.listing}/>
               <Form />
             </div>
           </div>

@@ -2,42 +2,49 @@ import Picture from "./Picture";
 import { Prop } from '.'
 const Content = (props: Prop) => {
   return (
-    <section className="bg-color-eight body-font">
-      <div className=" mx-auto flex pr-5 py-4 md:flex-row flex-col items-center">
-        <Picture url={props.data.url} />
-        <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-          <h1 className="title-font xl:text-4xl md:text-xl sm:font-bold text-xl mb-4 font-semibold text-color-third md:max-w-3xl max-w-xs leading-7 ">{props.data.heading}
+    <section className="bg-color-eight body-font ">
+      <div className="mx-auto w-full flex items-center lg:items-start  lg:flex-row flex-col lg:px-20 mt-8 ">
+        <div className="lg:w-2/3 w-4/5 lg:pr-8   lg:text-left ">
+          <h1 className="title-font xl:text-3xl md:text-xl sm:font-bold text-xl mb-2 font-semibold min-w-full text-color-third max-w-2xl">
+            {props.data.heading}
           </h1>
-          <p className="mb-8 leading-7 text-color-sixth opacity-70 xl:text-xl sm:font-normal text-sm px-4">
+          <p className="mb-8 leading-7 text-left text-color-fifth opacity-70 xl:text-xl sm:font-normal text-sm font-semibold">
             {props.data.authors}
           </p>
         </div>
+
+        <div className="lg:w-1/3  w-4/5   lg:items-start  text-center lg:text-left ">
+          <h1 className="title-font xl:text-2xl tracking-wider text-left
+           md:text-xl  text-xl mb-2 font-bold text-color-third ">
+            {props.data.protect}
+          </h1>
+          <p className="mb-8 leading-7 text-left text-color-fifth opacity-70 xl:text-xl sm:font-normal text-sm font-semibold">
+            {props.data.handpick}
+          </p>
+        </div>
       </div>
-      <div className="lg:flex lg:flex-row flex-col sm:justify-around mb-9 justify-center  px-3 xl:mt-6">
-        <div className="lg:flex-grow lg:pl-20 md:pl-16 flex flex-col md:items-start 
-              md:text-left  items-center text-center">
-          <h1 className="title-font  xl:text-2xl md:text-2xl mb-4 sm:font-bold text-color-third text-xl font-semibold lg:h-24">{props.data.protect}
-
-          </h1>
-          <p className="mb-8 leading-5 text-color-sixth opacity-70 xl:text-xl md:text-md  text-sm font-normal md:leading-7 px-3">{props.data.handpick}</p>
-
-        </div>
-        <div className="lg:flex-grow lg:pl-10 md:pl-16 flex  flex-col md:items-start md:text-left items-center text-center">
-          <h1 className="title-font  xl:text-2xl mb-4 sm:font-bold md:text-2xl text-color-third text-xl font-semibold lg:h-24" >{props.data.riding}
-          </h1>
-          <p className="mb-8 leading-5 text-color-sixth opacity-70 xl:text-xl md:text-md  
-              font-normal text-sm md:leading-7 px-3">
+      <div className="mx-auto w-full flex items-center lg:items-start  lg:flex-row flex-col lg:pl-20 ">
+         <div className="left flex flex-col lg:w-2/6 w-4/5 lg:pr-8 text-center lg:text-left ">
+          
+         <div className="">
+            <h1 className="title-font w-[70%] text-left  xl:text-3xl md:text-xl sm:font-bold text-xl mb-2 font-semibold text-color-third max-w-2xl">
+              {props.data.riding}
+            </h1>
+            <p className="mb-8 leading-7 text-left text-color-fifth opacity-70 xl:text-xl sm:font-normal text-sm font-semibold">
               {props.data.understand}
-          </p>
-        </div>
-        <div className="lg:flex-grow lg:pr-20 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-          <h1 className="title-font xl:text-2xl mb-4 xl:font-bold md:text-xl text-color-third tracking-tight   text-xl font-semibold lg:h-24 ">{props.data.variety}
-          </h1>
-          <p className="mb-8 leading-5 md:leading-7 text-color-sixth opacity-70 
-              xl:text-xl md:text-md text-sm font-normal px-3">
-            {props.data.stream}
-          </p>
-        </div>
+            </p>
+          </div>
+
+          <div className="">
+            <h1 className="title-font xl:text-3xl text-left  md:text-xl  text-xl mb-2 font-bold text-color-third">
+              {props.data.variety}
+            </h1>
+            <p className="mb-8 leading-7 text-left text-color-fifth opacity-70 xl:text-xl sm:font-normal text-sm font-semibold">
+              {props.data.stream}
+            </p>
+          </div>
+         </div>
+        <Picture url={props.data.url}/>
       </div>
     </section>
   );
